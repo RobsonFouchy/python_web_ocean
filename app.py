@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # POSTS MOCK
 posts = [
@@ -11,8 +11,11 @@ posts = [
     {
         "titulo": "Post 2",
         "texto": "Olha eu aqui de novo"
+    },
+       {
+        "titulo": "Post 3",
+        "texto": "Novo Post"
     }
-
 ]
 
 @app.route('/')
